@@ -81,7 +81,7 @@ def marquee_text(text, width):
 def display_news():
     while True:
         # Fetch news headlines from the API
-        url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=7ae6cc002461492d834d7e4f5bf916d1"
+        url = "https://newsapi.org/v2/top-headlines?country=us&apiKey=<Your_API_Key_Here>"
         response = requests.get(url)
         data = json.loads(response.text)
 
